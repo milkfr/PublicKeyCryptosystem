@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.francium.publickeycryptosystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:icon="@drawable/title"
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".RabinActivity"
+            android:label="@string/rabin">
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".RSAActivity"
+            android:label="@string/rsa">
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".ElGamalActivity"
+            android:label="@string/elgamal">
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".AboutActivity"
+            android:label="@string/about">
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".RSADemonstrateActivity"
+            android:label="@string/rsa_demonstrate" >
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".RabinDemonstrateActivity"
+            android:label="@string/rabin_demonstrate" >
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".ElGamalDemonstrateActivity"
+            android:label="@string/elgamal_demonstrate" >
+        </activity>
+
+        <activity
+            android:icon="@drawable/title"
+            android:name=".ElGamalHackFive"
+            android:label="@string/level_5" >
+        </activity>
+    </application>
+
+</manifest>

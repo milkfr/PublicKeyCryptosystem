@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">公钥密码系统</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_github">GitHub</string>
+    <string name="home">首页</string>
+    <string name="rabin">Rabin公钥密码系统</string>
+    <string name="rsa">RSA公钥密码系统</string>
+    <string name="elgamal">ElGamal公钥密码系统</string>
+    <string name="about">关于</string>
+    <string name="rsa_demonstrate">RSA演示</string>
+    <string name="rabin_demonstrate">Rabin演示</string>
+    <string name="elgamal_demonstrate">ElGamal演示</string>
+    <string name="button_hack">看完演示，点击进入黑客关卡</string>
+    <string name="rsa_hack">RSA Hack</string>
+    <string name="rabin_hack">Rabin Hack</string>
+    <string name="elgamal_hack">ElGamal Hack</string>
+    <string name="level_1">LEVEL 1</string>
+    <string name="level_2">LEVEL 2</string>
+    <string name="level_3">LEVEL 3</string>
+    <string name="level_4">LEVEL 4</string>
+    <string name="level_5">LEVEL 5</string>
+    <string name="level_6">LEVEL 6</string>
+    <string name="level_7">LEVEL 7</string>
+    <string name="action_hack_next">NEXT LEVEL</string>
+
+    <!-- 关于 -->
+    <string name="about_text1">\t\t\t\t早在1977年,Ron Rivest、Adi Shamir和Leonard Adleman就一起提出了RSA公钥加密算法</string>
+    <string name="about_text2">\t\t\t\t早在1979年，Michael Rabin就提出了Rabin公钥加密算法</string>
+    <string name="about_text3">\t\t\t\t早在1985年，Taher Elgamal就提出了ElGamal公钥加密算法</string>
+    <string name="about_text4">\t\t\t\t30多年以后，我们还在为几十年前的算法，几百年前的数学熬夜</string>
+    <string name="about_text5">\t\t\t\t虽然很慢，我们也在进步</string>
+    <string name="about_text6">作者：</string>
+    <string name="about_text7">GitHub项目首页：</string>
+    <string name="address">https://github.com/franciumzh/cryptosystem</string>
+
+    <!-- Home Page -->
+    <string name="home_text1">中国地质大学(武汉)</string>
+    <string name="home_text2">信息安全数学基础三大公钥密码系统</string>
+    <string name="home_text3">教学演示用APP</string>
+    <string name="home_text4">公钥密码系统简介:</string>
+    <string name="home_text5">\t\t\t\t公钥密码系统(public-key cryptosystem)，也称为非对称加密(asymmetric cryptography)，一种密码学算法类型，在这种密码学方法中，需要一对密钥，一个是私人密钥，另一个则是公开密钥。这两个密钥是数学相关，用某用户密钥加密后所得的信息，只能用该用户的解密密钥才能解密。如果知道了其中一个，并不能计算出另外一个。因此如果公开了一对密钥中的一个，并不会危害到另外一个的秘密性质。称公开的密钥为公钥；不公开的密钥为私钥。</string>
+    <string name="home_text6">优点:</string>
+    <string name="home_text7">\t\t\t\t与对称密钥加密相比，优点在于无需共享的通用密钥，解密的私钥不发往任何用户。即使公钥在网上被截获，如果没有与其匹配的私钥，也无法解密，所截获的公钥是没有任何用处的。</string>
+    <string name="home_text8">过程:</string>
+    <string name="home_text9">\t\t\t\t假设两个用户A向B发送信息。B的公钥为c，对应私钥（也是属于B的）为d，明文为x：\n\t\t\t\t1.A用公钥对明文进行加密形成密文c(x)，然后传输密文；\n\t\t\t\t2.B收到密文，用私钥对密文进行解密d(c(x)),得到要通信的明文x。\n\t\t\t\tB向A发送信息反之。</string>
+    <string name="home_text10">图解:</string>
+    <string name="home_text11">Alice与Bob双方通信：</string>
+    <string name="home_text12">\t\t\t\t使用非对称加密算法，随机出不可预知的大数，通过大数生成合适的可接受的密钥。</string>
+    <string name="home_text13">\t\t\t\t在非对称密钥加密方案中，任何人都可以使用公共密钥加密信息，但只有配对的私钥的持有者可以解密。安全性取决于私钥的保密性。</string>
+    <string name="home_text14">\t\t\t\t在Diffie Hellman密钥交换方案中，每一方都生成一个公钥/私钥对，将公钥交给对方，Alice和Bob就可以通过公共信道交换一个信息，就可以创建一个可以用于在公共信道上安全通信的共享秘密</string>
+
+    <!-- rsa页面 -->
+    <string name="rsa_text1">简介:</string>
+    <string name="rsa_text2">\t\t\t\tRSA公钥加密算法是1977年由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）一起提出的。当时他们三人都在麻省理工学院工作。RSA就是他们三人姓氏开头字母拼在一起组成的。\n\t\t\t\tRSA是目前最有影响力的公钥加密算法，它能够抵抗到目前为止已知的绝大多数密码攻击，已被ISO推荐为公钥数据加密标准。\n\t\t\t\tRSA算法基于一个十分简单的数论事实：将两个大素数相乘十分容易，但是想要对其乘积进行因式分解却极其困难，因此可以将乘积公开作为加密密钥。</string>
+    <string name="rsa_text3">图解:</string>
+    <string name="rsa_text4">密钥生成:</string>
+    <string name="rsa_text5">\t\t\t\t1、随意选择两个大的质数p和q，二者具有相同的阶\n\t\t\t\t2、计算n = pq和与n互素的整数的个数coPrime = (p - 1)(q - 1)(要求n^k &lt; n &lt; n^l)\n\t\t\t\t3、随机选取整数e，1 &lt; e &lt; coPrime，使得e与coPrime互素\n\t\t\t\t4、运用广义欧几里得除法，计算出唯一的整数d，1 &lt; d &lt; coPrime，使得ed和1关于coPrime同余\n\t\t\t\t5、A的公钥是(n, e),私钥是d</string>
+    <string name="rsa_text6">加密步骤:</string>
+    <string name="rsa_text7">\t\t\t\t1、得到确认的接受者A的加密公钥(n, e)\n\t\t\t\t2、将明文信息表示成整数m，0 &lt;= m &lt;= (n - 1),m和n互素\n\t\t\t\t3、计算整数密文c = m^e(mod n),1 &lt;= c &lt; n\n\t\t\t\t4、将整数c转换成密文信息\n\t\t\t\t5、将密文信息发送给A</string>
+    <string name="rsa_text8">解密步骤:</string>
+    <string name="rsa_text9">\t\t\t\t1、将密文转换成整数c\n\t\t\t\t2、运用解密私钥d恢复整数m = c^d(mod n)\n\t\t\t\t3、将整数m转换成明文信息</string>
+    <string name="rsa_text10">过程演示:</string>
+    <string name="rsa_text11">请输入要加密的明文</string>
+    <string name="rsa_button">"演示"</string>
+
+    <!-- rsa demonstrate 页面 -->
+    <string name="rsa_demonstrate_text1">获取密钥:</string>
+    <string name="rsa_demonstrate_text2">生成两个大素数p和q</string>
+    <string name="rsa_demonstrate_text3">计算n = pq</string>
+    <string name="rsa_demonstrate_text4">求出与n互素的整数个数coPrime</string>
+    <string name="rsa_demonstrate_text5">随机选取整数e，使得e与coPrime互素</string>
+    <string name="rsa_demonstrate_text6">运用广义欧几里得除法，求出唯一整数d（1 &lt; d &lt; n），使得ed与1关于n同余</string>
+    <string name="rsa_demonstrate_text7">将公钥发送给B，生成的公钥(n, e)为</string>
+    <string name="rsa_demonstrate_text8">A保留私钥，生成私钥d为</string>
+    <string name="rsa_demonstrate_text9">加密过程:</string>
+    <string name="rsa_demonstrate_text10">发送者B获取公钥后，输入要加密的整数明文m</string>
+    <string name="rsa_demonstrate_text11">计算密文c = m^e(mod n)</string>
+    <string name="rsa_demonstrate_text12">B将密文转化成信息传送给A</string>
+    <string name="rsa_demonstrate_text13">解密过程:</string>
+    <string name="rsa_demonstrate_text14">接收者A获取密文信息c</string>
+    <string name="rsa_demonstrate_text15">A通过私钥计算出明文m</string>
+
+    <!-- rabin 页面 -->
+    <string name="rabin_text1">简介:</string>
+    <string name="rabin_text2">\t\t\t\tRabin公钥密码系统是一种非对称的加密技术，其安全性，与RSA一样，是和大数分解的难度有关，Rabin也可以说是一种特殊的RSA，它是由迈克尔·O·拉宾（Michael Oser Rabin）于1979年发明的。\n\t\t\t\tRabin的缺点在于它的每个输入会产生4个输出，需要增加额外的复杂性来确定4个输出中的真正输入。</string>
+    <string name="rabin_text3">图解:</string>
+    <string name="rabin_text4">密钥生成:</string>
+    <string name="rabin_text5">\t\t\t\t1、随机产生两个不同的大素数p和q，二者具有相同的阶\n\t\t\t\t2、计算n = pq\n\t\t\t\t3、A的公钥是n,私钥是(p, q)</string>
+    <string name="rabin_text6">加密步骤:</string>
+    <string name="rabin_text7">\t\t\t\t1、B得到确认的接受者A的加密公钥n\n\t\t\t\t2、将明文信息表示成整数m，0 &lt;= m &lt;= (n - 1)\n\t\t\t\t3、计算整数密文c = m^2(mod n),1 &lt;= c &lt; n\n\t\t\t\t4、将密文信息发送给A</string>
+    <string name="rabin_text8">解密步骤:</string>
+    <string name="rabin_text9">\t\t\t\t1、计算同余式x^2 = c (mod n)的4个根m1, m2, m3, m4\n\t\t\t\t2、根据添加的复杂性由A确定明文\n\t\t\t\t3、特别的，也是实际中使用的，当p = q = 3(mod 4)，解密可以做如下简化：\n\t\t\t\t(1)运用广义欧几里得算法，求出s和t，使得sp + tq = 1\n\t\t\t\t(2)计算u = c^((p - 1) / 4)(mod p)\n\t\t\t\t(3)计算v = c^((q - 1) / 4)(mod q)\n\t\t\t\t(4)计算x = (tqu + spv)(mod n)\n\t\t\t\t(5)计算y = (tqu-spv)(mod n)\n\t\t\t\t(6)同余式x^2 = c(mod n)的四个根是x, -x(mod n), y, -y(mod n)\n\t\t\t\t(7)决定其中的一个根是密文</string>
+    <string name="rabin_text10">过程演示:</string>
+    <string name="rabin_text11">请输入要加密的明文</string>
+    <string name="rabin_button">演示</string>
+
+    <!-- rabin demonstrate 页面 -->
+    <string name="rabin_demonstrate_text1">获取密钥:</string>
+    <string name="rabin_demonstrate_text2">生成两个大素数p和q</string>
+    <string name="rabin_demonstrate_text3">计算n = pq</string>
+    <string name="rabin_demonstrate_text4">将公钥发送给B，生成的公钥n为</string>
+    <string name="rabin_demonstrate_text5">A保留私钥，生成私钥(p, q)为</string>
+    <string name="rabin_demonstrate_text6">加密过程:</string>
+    <string name="rabin_demonstrate_text7">发送者B获取公钥后，输入要加密的整数明文m0</string>
+    <string name="rabin_demonstrate_text8">发送者B获取增加的复杂性，本例中为增加一个尾随后缀</string>
+    <string name="rabin_demonstrate_text9">得到最终需要加密的字符串m</string>
+    <string name="rabin_demonstrate_text10">计算密文c = m^2(mod n)</string>
+    <string name="rabin_demonstrate_text11">B将密文转化成信息传送给A</string>
+    <string name="rabin_demonstrate_text12">解密过程:</string>
+    <string name="rabin_demonstrate_text13">接收者A获取密文信息c</string>
+    <string name="rabin_demonstrate_text14">运用广义欧几里得算法，求出s和t，使得sp + tq = 1</string>
+    <string name="rabin_demonstrate_text15">计算u = c^((p - 1) / 4)(mod p)\n计算v = c^((q - 1) / 4)(mod q)</string>
+    <string name="rabin_demonstrate_text16">计算x = (tqu + spv)(mod n)\n计算y = (tqu-spv)(mod n)\n得出同余式x^2 = c(mod n)的四个根是x, -x(mod n), y, -y(mod n)</string>
+    <string name="rabin_demonstrate_text17">A根据增加的复杂性（此处为加上的后缀）确定最终的明文</string>
+
+    <!-- elgamal 页面 -->
+    <string name="elgamal_text1">简介:</string>
+    <string name="elgamal_text2">\t\t\t\tElGamal算法，是一种较为常见的加密算法，它是基于1984年提出的公钥密码体制和椭圆曲线加密体系，在1985年由Taher Elgamal提出的，既能用于数据加密也能用于数字签名，其安全性依赖于计算有限域上离散对数这一难题。\n\t\t\t\t在加密过程中，生成的密文长度是明文的两倍，且每次加密后都会在密文中生成一个随机数K，在密码中主要应用离散对数问题的几个性质：求解离散对数（可能）是困难的，而其逆运算指数运算可以应用平方-乘的方法有效地计算。也就是说，在适当的群G中，指数函数是单向函数。</string>
+    <string name="elgamal_text3">图解:</string>
+    <string name="elgamal_text4">密钥生成:</string>
+    <string name="elgamal_text5">\t\t\t\t1、随机产生一个大素数p及其乘群的生成元g\n\t\t\t\t2、随机选取整数a(1 &lt;= a &lt;= p - 2)作为私钥，计算g^a(mod p)作为公钥\n\t\t\t\t3、A的公钥是(p, g, g^a(mod p)), 私钥是a\t\n注这里的大素数p及乘群的生成元g可以被多个用户共同使用</string>
+    <string name="elgamal_text6">加密步骤:</string>
+    <string name="elgamal_text7">\t\t\t\t1、B得到确认的接受者A的加密公钥(p, g, g^a(mod p))\n\t\t\t\t2、将明文信息表示成整数m，0 &lt;= m &lt;= (n - 1)\n\t\t\t\t3、随机选取一个整数k，1 &lt;= k &lt;= (p - 2)\n\t\t\t\t4、计算u = p^k(mod p)和v = m*(g^a)^k(mod p)\n\t\t\t\t5、将密文c = (u, v)发送给A</string>
+    <string name="elgamal_text8">解密步骤:</string>
+    <string name="elgamal_text9">\t\t\t\t1、运用私钥a，计算u^(p - 1 - a)(mod p)\n\t\t\t\t2、A计算u^(p - 1 - a) * v(mod p)并将它恢复成明文信息m</string>
+    <string name="elgamal_text10">过程演示:</string>
+    <string name="elgamal_text11">请输入要加密的明文</string>
+    <string name="elgamal_button">演示</string>
+
+    <!-- elgamal demonstrate 页面 -->
+    <string name="elgamal_demonstrate_text1">获取密钥:</string>
+    <string name="elgamal_demonstrate_text2">生成一个大素数p</string>
+    <string name="elgamal_demonstrate_text3">找到这个的大素数的乘群的一个生成元g</string>
+    <string name="elgamal_demonstrate_text4">随机选取整数a</string>
+    <string name="elgamal_demonstrate_text5">计算g^a(mod p)</string>
+    <string name="elgamal_demonstrate_text6">生成公钥(p, g, g^a(mod p))为</string>
+    <string name="elgamal_demonstrate_text7">A保留公钥a</string>
+    <string name="elgamal_demonstrate_text8">加密过程:</string>
+    <string name="elgamal_demonstrate_text9">发送者B获取公钥后，输入要加密的整数明文m</string>
+    <string name="elgamal_demonstrate_text10">随机选取一个整数k</string>
+    <string name="elgamal_demonstrate_text11">计算u = g^k(mod p)和v = m(g^a)^k(mod p)</string>
+    <string name="elgamal_demonstrate_text12">B将密文(u, v)转化成信息传送给A</string>
+    <string name="elgamal_demonstrate_text13">解密过程:</string>
+    <string name="elgamal_demonstrate_text14">接收者A获取密文信息(u, v)</string>
+    <string name="elgamal_demonstrate_text15">恢复明文信息m = u^(p - 1 - a) * v (mod p)</string>
+
+    <!-- hack -->
+    <string name="hack_description">关卡描述</string>
+    <string name="hack_enc_1">\t\t\t\t本关卡随机生成2^10左右的大素数来产生密钥，闯关的Hacker需要根据给出的公钥对明文进行加密，加密结果正确则可进入下一关（数位较小，使用手算、心算、编程算皆可）</string>
+    <string name="hack_enc_2">\t\t\t\t本关卡随机生成2^30左右的大素数来产生密钥，闯关的Hacker需要根据给出的公钥对明文进行加密，加密结果正确则可进入下一关（数位一般，普通计算器无法算出，可编程求解）</string>
+    <string name="hack_enc_3">\t\t\t\t本关卡随机生成2^100左右的大素数来产生密钥，闯关的Hacker需要根据给出的公钥对明文进行加密，加密结果正确则可进入下一关（数位较大，编程要考虑大数情况，能心算请联系我）</string>
+    <string name="hack_dec_1">\t\t\t\t本关卡随机生成2^10左右的大素数来产生密钥，闯关的Hacker需要根据给出的私钥对密文进行解密，解密结果正确则可进入下一关（数位较小，使用手算、心算、编程算皆可）</string>
+    <string name="hack_dec_2">\t\t\t\t本关卡随机生成2^30左右的大素数来产生密钥，闯关的Hacker需要根据给出的私钥对密文进行解密，解密结果正确则可进入下一关（数位一般，普通计算器无法算出，可编程求解）</string>
+    <string name="hack_dec_3">\t\t\t\t本关卡随机生成2^100左右的大素数来产生密钥，闯关的Hacker需要根据给出的私钥对密文进行解密，解密结果正确则可进入下一关（数位较大，编程要考虑大数情况，能心算请联系我）</string>
+    <string name="hack_dec_4">\t\t\t\t本关卡随机生成2^10左右的大素数来产生密钥，闯关的Hacker需要根据给出的公钥对密文进行解密，解密结果正确则可进入下一关（数位较小，使用手算、心算、编程算皆可）</string>
+    <string name="hack_public_key">公钥</string>
+    <string name="hack_private_key">私钥</string>
+    <string name="hack_enc_message">需要加密的信息</string>
+    <string name="hack_dec_message">需要解密的密文</string>
+    <string name="hack_enc_level_key">请输入闯关密码（加密结果）</string>
+    <string name="hack_dec_level_key">请输入闯关密码（解密结果）</string>
+    <string name="hack_edit_view">请输入</string>
+    <string name="hack_button">测试</string>
+    <string name="hack_rabin_suffix">增加的复杂性（尾随后缀）</string>
+    <string name="hack_elgamal_edit_view_1">请输入u</string>
+    <string name="hack_elgamal_edit_view_2">请输入v</string>
+</resources>

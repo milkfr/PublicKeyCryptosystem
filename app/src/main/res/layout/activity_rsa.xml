@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:text="@string/rsa"
+            android:textColor="@drawable/title1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boundary"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text1"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:lineSpacingExtra="7dp"
+            android:text="@string/rsa_text2"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text3"
+            android:textColor="@drawable/title2" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rsa"
+            android:padding="0dp" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text4"
+            android:textColor="@drawable/title2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:lineSpacingExtra="7dp"
+            android:textColor="@drawable/text"
+            android:text="@string/rsa_text5" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text6"
+            android:textColor="@drawable/title2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:lineSpacingExtra="7dp"
+            android:textColor="@drawable/text"
+            android:text="@string/rsa_text7" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text8"
+            android:textColor="@drawable/title2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:lineSpacingExtra="7dp"
+            android:textColor="@drawable/text"
+            android:text="@string/rsa_text9" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rsa_text10"
+            android:textColor="@drawable/title2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp"
+            android:padding="15dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/rsa_edit_text"
+                android:hint="@string/rsa_text11"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rsaDemonstration"
+                android:text="@string/rsa_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

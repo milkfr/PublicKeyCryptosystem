@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="text2">#ab00a1f9</drawable>
+    <drawable name="red">#FF0000</drawable>
+    <drawable name="background">#ff00ffa0</drawable>
+    <drawable name="text">#88000000</drawable>
+    <drawable name="title2">#af15b800</drawable>
+    <drawable name="title1">#af2700ff</drawable>
+    <drawable name="actionbar">#affd9a00</drawable>
+</resources>

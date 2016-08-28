@@ -1,0 +1,332 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:text="@string/rabin_demonstrate"
+            android:textColor="@drawable/title1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boundary"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rabin_demonstrate_text1"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text2"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text3"
+            android:textColor="@drawable/text2" />
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text4"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_n2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text5"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_p2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_q2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rabin_demonstrate_text6"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text7"
+            android:textColor="@drawable/text2" />
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_plaintext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text8"
+            android:textColor="@drawable/text2" />
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_suffix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text9"
+            android:textColor="@drawable/text2" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_m"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text10"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_ciphertext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text11"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rabin_demonstrate_text12"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text13"
+            android:textColor="@drawable/text2" />
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_ciphertext2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text14"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text15"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_u"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text16"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_m1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_m2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_m3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_m4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="@string/rabin_demonstrate_text17"
+            android:textColor="@drawable/text2" />
+        
+        <TextView
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/rabin_plaintext2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/button_hack"
+            android:layout_margin="15dp"
+            android:onClick="rabinHack"/>
+    </LinearLayout>
+</ScrollView>
+

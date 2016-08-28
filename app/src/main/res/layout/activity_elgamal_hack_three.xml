@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/elgamal_hack"
+            android:textColor="@drawable/title1"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/boundary" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/elgamal_hack_three" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:lineSpacingExtra="7dp" -->
+<!--             android:padding="15dp" -->
+<!--             android:textColor="@drawable/text" /> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/hack_description"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:text="@string/hack_enc_2"
+            android:textColor="@drawable/text2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:text="@string/hack_public_key"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:id="@+id/elgamal_hack_three_p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+        <TextView
+            android:id="@+id/elgamal_hack_three_g"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+        <TextView
+            android:id="@+id/elgamal_hack_three_ga"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:text="@string/hack_dec_message"
+            android:textColor="@drawable/title2" />
+
+        <TextView
+            android:id="@+id/elgamal_hack_three_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:textColor="@drawable/text" />
+        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="7dp"
+            android:padding="15dp"
+            android:text="@string/hack_dec_level_key"
+            android:textColor="@drawable/title2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:id="@+id/elgamal_hack_three_edit_text_u"
+                android:hint="@string/hack_elgamal_edit_view_1"/>
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:id="@+id/elgamal_hack_three_edit_text_v"
+                android:hint="@string/hack_elgamal_edit_view_2"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:onClick="elgamalTest"
+                android:text="@string/hack_button"/>
+     
+    </LinearLayout>
+
+</ScrollView>

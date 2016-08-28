@@ -1,0 +1,177 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.francium.publickeycryptosystem.MainActivity" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="@string/home_text1"
+                android:textColor="@drawable/title1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/home_text2"
+                android:textColor="@drawable/title1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/home_text3"
+                android:paddingBottom="15dp"
+                android:textColor="@drawable/title1"
+                android:textSize="20dp" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/boundary" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/home_text4"
+                android:textColor="@drawable/title2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text5"
+                android:textColor="@drawable/text" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/home_text6"
+                android:textColor="@drawable/title2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text7"
+                android:textColor="@drawable/text" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/home_text8"
+                android:textColor="@drawable/title2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text9"
+                android:textColor="@drawable/text" />
+
+            <TextView
+                android:lineSpacingExtra="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/home_text10"
+                android:textColor="@drawable/title2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text11"
+                android:textColor="@drawable/text" />
+
+            <ImageView
+                android:layout_width="519dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/public_key_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text12"
+                android:textColor="@drawable/text" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/public_key_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text13"
+                android:textColor="@drawable/text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/public_key_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="7dp"
+                android:padding="15dp"
+                android:text="@string/home_text14"
+                android:textColor="@drawable/text" />
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.francium.publickeycryptosystem.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

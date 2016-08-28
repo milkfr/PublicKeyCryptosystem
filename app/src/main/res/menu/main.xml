@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.francium.publickeycryptosystem.MainActivity" >
+
+    <item
+        android:id="@+id/action_github"
+        android:showAsAction="withText|ifRoom"
+        android:icon="@drawable/github"
+        android:title="@string/action_github"/>
+
+</menu>
